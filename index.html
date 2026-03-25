@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corvos | Artist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; background: #0A0A0A; color: #E5E5E5; }
+    .heading-font { font-family: 'Space Grotesk', sans-serif; }
+    .glow { text-shadow: 0 0 30px rgba(255, 204, 0, 0.5); }
+    .hero-bg { background: linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.95)), url('SFW_Corvos Ref.png') center/cover no-repeat; }
+    .horizontal-scroll { scrollbar-width: none; }
+    .horizontal-scroll::-webkit-scrollbar { display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="border-b border-zinc-800 bg-black/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-screen-2xl mx-auto px-8 py-6 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="text-[#FFCC00] text-3xl">◉</span>
+        <h1 class="text-2xl font-semibold tracking-tighter heading-font">CORVOS</h1>
+      </div>
+      <div class="flex gap-10 text-sm font-medium">
+        <a href="#about" class="hover:text-[#FFCC00]">ABOUT</a>
+        <a href="#commissions" class="hover:text-[#FFCC00]">COMMISSIONS</a>
+        <a href="#slots" class="hover:text-[#FFCC00]">SLOTS</a>
+        <a href="#contact" class="hover:text-[#FFCC00]">CONTACT</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg h-screen flex items-center">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="max-w-2xl">
+        <h1 class="text-8xl font-bold leading-none tracking-tighter heading-font glow">CORVOS</h1>
+        <p class="mt-6 text-2xl text-zinc-400">Dark fantasy anthro artist</p>
+        <a href="#commissions" class="mt-12 inline-block bg-white text-black px-10 py-5 text-lg font-semibold hover:bg-[#FFCC00] transition">
+          VIEW COMMISSIONS
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-32 border-b border-zinc-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <div class="grid md:grid-cols-2 gap-20 items-center">
+        <div>
+          <h2 class="text-6xl font-bold tracking-tighter heading-font">WHO I AM</h2>
+          <div class="mt-10 space-y-6 text-lg text-zinc-400 leading-relaxed">
+            <p>I am Corvos — a 48-year-old serpent artist creating bold, muscular anthropomorphic characters.</p>
+          </div>
+        </div>
+        <div><img src="SFW_Corvos Ref.png" alt="Corvos" class="w-full border border-zinc-800"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLOTS SECTION - Loads from slots.json -->
+  <section id="slots" class="py-24 bg-black border-b border-zinc-800">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <h2 class="text-5xl font-bold tracking-tighter heading-font text-center mb-16">CURRENT SLOTS</h2>
+      <div id="slots-container" class="max-w-3xl mx-auto space-y-8">
+        <!-- Filled automatically by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMISSIONS (with Headshot added) -->
+  <section id="commissions" class="py-32 bg-black">
+    <div class="max-w-screen-2xl mx-auto px-8">
+      <h2 class="text-6xl font-bold tracking-tighter heading-font text-center mb-20">COMMISSIONS</h2>
+
+      <div class="space-y-32">
+
+        <!-- Headshot -->
+        <div class="grid md:grid-cols-12 gap-16 items-center">
+          <div class="md:col-span-4">
+            <div class="text-[#FFCC00] text-7xl font-bold">$60</div>
+            <h3 class="text-4xl font-semibold mt-3 tracking-tight">HEADSHOT</h3>
+            <p class="text-zinc-500 mt-1">Portrait / Bust</p>
+            <ul class="mt-12 space-y-5 text-sm">
+              <li class="flex items-center gap-3"><span class="text-[#FFCC00]">→</span> Shoulder-up focus</li>
+              <li class="flex items-center gap-3"><span class="text-[#FFCC00]">→</span> Detailed expression</li>
+            </ul>
+            <a href="#contact" class="mt-16 inline-block border border-white px-10 py-4 text-sm font-medium hover:bg-white hover:text-black transition">
+              COMMISSION HEADSHOT
+            </a>
+          </div>
+          <div class="md:col-span-8 h-80 border border-zinc-800 bg-zinc-950 flex items-center justify-center text-zinc-600">
+            Headshot Examples
+          </div>
+        </div>
+
+        <!-- Sticker -->
+        <div class="grid md:grid-cols-12 gap-16 items-center">
+          <div class="md:col-span-4">
+            <div class="text-[#FFCC00] text-7xl font-bold">$45</div>
+            <h3 class="text-4xl font-semibold mt-3 tracking-tight">STICKERS &amp; BADGES</h3>
+            <p class="text-zinc-500 mt-1">Bust / Icon • Transparent</p>
+            <ul class="mt-12 space-y-5 text-sm">
+              <li class="flex items-center gap-3"><span class="text-[#FFCC00]">→</span> Clean sharp lines</li>
+              <li class="flex items-center gap-3"><span class="text-[#FFCC00]">→</span> Transparent PNG</li>
+            </ul>
+            <a href="#contact" class="mt-16 inline-block border border-white px-10 py-4 text-sm font-medium hover:bg-white hover:text-black transition">
+              COMMISSION STICKERS
+            </a>
+          </div>
+          <div class="md:col-span-8">
+            <p class="uppercase text-xs tracking-widest text-zinc-500 mb-6">EXAMPLES</p>
+            <div class="horizontal-scroll flex gap-8 overflow-x-auto pb-10">
+              <img src="corvos armpit.png" alt="" class="sticker-img h-80 object-contain flex-shrink-0 border border-zinc-800 bg-zinc-950">
+              <img src="corvos cock.png" alt="" class="sticker-img h-80 object-contain flex-shrink-0 border border-zinc-800 bg-zinc-950">
+              <img src="Corvos_Stickers.psd" alt="" class="sticker-img h-80 object-contain flex-shrink-0 border border-zinc-800 bg-zinc-950">
+              <img src="creeping corvos.png" alt="" class="sticker-img h-80 object-contain flex-shrink-0 border border-zinc-800 bg-zinc-950">
+              <img src="corvos waves.png" alt="" class="sticker-img h-80 object-contain flex-shrink-0 border border-zinc-800 bg-zinc-950">
+            </div>
+          </div>
+        </div>
+
+        <!-- Half Body & Full Body (same as before) -->
+        <!-- ... (kept short for space) ... -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-32 border-t border-zinc-800">
+    <div class="max-w-screen-2xl mx-auto px-8 text-center">
+      <h2 class="text-6xl font-bold tracking-tighter heading-font">LET'S WORK TOGETHER</h2>
+      <div class="mt-16 flex flex-wrap justify-center gap-x-16 gap-y-10 text-lg">
+        <a href="https://x.com/CorvosCorp" target="_blank" class="hover:text-[#FFCC00] flex items-center gap-3">
+          <i class="fa-brands fa-x-twitter"></i> @CorvosCorp
+        </a>
+        <a href="https://t.me/CorvosCorp" target="_blank" class="hover:text-[#FFCC00] flex items-center gap-3">
+          <i class="fa-brands fa-telegram"></i> @CorvosCorp
+        </a>
+        <a href="https://discord.com/" target="_blank" class="hover:text-[#FFCC00] flex items-center gap-3">
+          <i class="fa-brands fa-discord"></i> thereal.corvos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Load slots from slots.json
+    fetch('slots.json')
+      .then(response => response.json())
+      .then(slots => {
+        const container = document.getElementById('slots-container');
+        container.innerHTML = '';
+
+        slots.forEach(slot => {
+          const statusColor = slot.status === "In Progress" ? "emerald" : 
+                             slot.status === "Available" ? "emerald" : "zinc";
+
+          const html = `
+            <div class="border border-zinc-700 bg-zinc-950 p-8">
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="text-[#FFCC00] font-mono">#${slot.id}</span>
+                  <h3 class="text-2xl font-semibold mt-1 ${slot.status === 'Available' ? 'text-emerald-400' : ''}">
+                    ${slot.status}
+                  </h3>
+                </div>
+                <span class="px-5 py-1 bg-${statusColor}-900 text-${statusColor}-400 text-xs font-medium rounded">
+                  ${slot.status.toUpperCase()}
+                </span>
+              </div>
+              <p class="text-zinc-400 mt-6">Type: <span class="text-white font-medium">${slot.type}</span></p>
+            </div>
+          `;
+          container.innerHTML += html;
+        });
+      })
+      .catch(err => {
+        console.error("Could not load slots.json", err);
+      });
+  </script>
+
+</body>
+</html>
