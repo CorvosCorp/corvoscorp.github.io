@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "status": "In Progress",
+    "type": "Headshot"
+  },
+  {
+    "id": 2,
+    "status": "Not Started",
+    "type": "Sticker"
+  },
+  {
+    "id": 3,
+    "status": "Available",
+    "type": "Open Slot"
+  }
+]
